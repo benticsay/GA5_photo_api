@@ -1,10 +1,24 @@
 
 
 
-        <p><img src="<%= @selfie1 %>"</p>
-        <p><img src="%= @selfie2 %>"</p>
-        <p><img src="<%= @selfie3 %>"</p>
+        <p><img src="<%= @selfie1 %>"></p>
+        <p><img src="%= @selfie2 %>"></p>
+        <p><img src="<%= @selfie3 %>"></p>
 
 
 
 
+<form action="/selfies" method="post">
+  <p>
+    <input type="text" name="kfm" placeholder="item name" />
+  </p>
+  <p>
+    <input type="text" name="kfm" placeholder="price" />
+  </p>  
+  <p>
+    <input type="text" name="kfm" placeholder="item description" />
+  </p>
+ 
+
+  <input type="submit" value="Create Item" />
+</form>

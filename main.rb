@@ -37,7 +37,7 @@ post '/selfies' do
   description = params[:kfm]
   url = @selfie1
   Selfie.create(
-    title: name,
+    user_name: name,
     description: description,
     url: url
   )
@@ -46,7 +46,7 @@ post '/selfies' do
   description = params[:kfm]
   url = @selfie2
   Selfie.create(
-    name: name,
+    user_name: name,
     description: description,
     url: url
   ) 
@@ -55,9 +55,9 @@ post '/selfies' do
   description = params[:kfm]
   url = @selfie3
   Selfie.create(
-    name: name,
+    user_name: name,
     description: description,
-    quantity: url
+    url: url
   )
   redirect "/"
 end
