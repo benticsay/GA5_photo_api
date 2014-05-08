@@ -1,3 +1,32 @@
 body {
 	background-color: #FF8282;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 80px;
 }
+
+img {
+	display: inline-block;
+	max-width: 80%;
+    max-height: 80%;
+    margin: 10px;
+}
+
+input {
+	margin: 0 8% 0 8%;
+}
+
+.home_img {
+	margin-top: 30%;
+}
+
+.show_img {
+	display: inline-block;
+	max-width: 80%;
+    max-height: 80%;
+    margin: 10px;
+}
+
+/*h1 {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 80px;
+}*/

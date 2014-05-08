@@ -1,30 +1,27 @@
 
 
-<!-- 
-        <p><img src="<%= @selfie1 %>"></p>
-        <p><img src="<%= @selfie2 %>"></p>
-        <p><img src="<%= @selfie3 %>"></p>
- -->
+<div class"home_img">
+        <img src="<%= @selfie1 %>">
+        <img src="<%= @selfie2 %>">
+       <img src="<%= @selfie3 %>">
+</div>
 
 
 
 <form action="/selfies" method="post">
-  <p>
-  	<img src="<%= @selfie1 %>">
+
+<!--   	<img src="<%= @selfie1 %>"> -->
     <input type="text" name="kfm_1" placeholder="KFM" />
     <input type="hidden" name="url_1" value="<%= @selfie1 %>">
-  </p>
-  <p>
-  	<img src="<%= @selfie2 %>">
+
+<!--   	<img src="<%= @selfie2 %>"> -->
     <input type="text" name="kfm_2" placeholder="KFM" />
     <input type="hidden" name="url_2" value="<%= @selfie2 %>">
-  </p>  
-  <p>
-  	<img src="<%= @selfie3 %>">
+
+<!--   	<img src="<%= @selfie3 %>"> -->
     <input type="text" name="kfm_3" placeholder="KFM" />
     <input type="hidden" name="url_3" value="<%= @selfie3 %>">
-  </p>
- 
+</div>
 
   <input type="submit" value="Enter Choices" />
 </form>
