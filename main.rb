@@ -7,7 +7,7 @@ require 'httparty'
 
 # establishes connection once and for all...
 ActiveRecord::Base.establish_connection({
-  database: "photo_api",
+  database: "insta_kfm",
   adapter: "postgresql"
 })
 
@@ -25,38 +25,40 @@ get '/' do
 end
 
 
-# get '/index' do
+get '/show' do
+	@selfies_show = Selfie.all
+	erb :show
 
-# 	erb :index
-
-# end
+end
 
 post '/selfies' do
+
+
   # processes new item data
   name = "selfie1"
-  description = params[:kfm]
-  url = @selfie1
+  description_1 = params[:kfm_1]
+  url = params[:url_1]
   Selfie.create(
     user_name: name,
-    description: description,
+    description: description_1,
     url: url
   )
 
   name = "selfie2"
-  description = params[:kfm]
-  url = @selfie2
+  description_2 = params[:kfm_2]
+  url = params[:url_2]
   Selfie.create(
     user_name: name,
-    description: description,
+    description: description_2,
     url: url
   ) 
 
   name = "selfie3"
-  description = params[:kfm]
-  url = @selfie3
+  description_3 = params[:kfm_3]
+  url = params[:url_3]
   Selfie.create(
     user_name: name,
-    description: description,
+    description: description_3,
     url: url
   )
   redirect "/"
