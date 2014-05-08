@@ -4,6 +4,12 @@ body {
 	font-size: 80px;
 }
 
+header {
+	background: url();
+	opacity: ;
+
+}
+
 img {
 	display: inline-block;
 	max-width: 80%;
@@ -19,7 +25,7 @@ input {
 	margin-top: 30%;
 }
 
-.show_img {
+.view_itup {
 	display: inline-block;
 	max-width: 80%;
     max-height: 80%;

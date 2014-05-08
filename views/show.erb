@@ -1,12 +1,15 @@
 
+<div class="view_itup">
 
-
-<ul class="selfies">
+<ul>
   <% @selfies_show.each do |selfie| %>
     <li>
-        <p> <img src= "<%= selfie.url %>"></p>
+        <img src= "<%= selfie.url %>">
 		<h2><%= selfie.user_name %></h2>
         <p>Rating: <%= selfie.description %></p>
 </li>
   <% end %>
 </ul>
+
+
+</div>
